@@ -54,6 +54,8 @@ form {
     border: none;
     position: absolute;
     right: 10px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .remove-btn:hover {

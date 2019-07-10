@@ -15,7 +15,7 @@
         const removeBtn = document.createElement('button');
         const checkBox = document.createElement('input');
         const liText = document.createTextNode(`${taskName}`);
-        const removeBtnText = document.createTextNode(` X `);
+        const removeBtnText = document.createTextNode(`×`);
         removeBtn.classList.add('remove-btn')
         checkBox.setAttribute('type', 'checkbox');
 
