@@ -35,15 +35,20 @@
             
         })
 
-        removeBtn.appendChild(removeBtnText);
-
         li.appendChild(checkBox);
         li.appendChild(liText);
         li.appendChild(removeBtn);
+
+        removeBtn.appendChild(removeBtnText);
+        
+        if (taskName.length >= 3) {
+            ul.appendChild(li);
+        }
+        
         
         
 
-        ul.appendChild(li);
+        
 
         tasks.push(taskName);
 
