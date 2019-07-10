@@ -1,17 +1,15 @@
 (function () {
     const input = document.getElementById('add-item-input');
-    const button = document.querySelector('.add-btn');
+    const addBtn = document.querySelector('.add-btn');
     const ul = document.querySelector('.todo-list');
 
     let taskName = '';
-
-    let tasks = [];
 
     input.addEventListener('change', ({target: {value}}) => {
         taskName = value;
     })
 
-    button.addEventListener('click', (e) => {
+    addBtn.addEventListener('click', (e) => {
         e.preventDefault();
         const li = document.createElement('li');
         const removeBtn = document.createElement('button');
@@ -40,18 +38,11 @@
         li.appendChild(removeBtn);
 
         removeBtn.appendChild(removeBtnText);
-        
+
         if (taskName.length >= 3) {
             ul.appendChild(li);
         }
         
-        
-        
-
-        
-
-        tasks.push(taskName);
-
         taskName = '';
         input.value = '';
     })
