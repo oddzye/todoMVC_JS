@@ -17,17 +17,28 @@
         const li = document.createElement('li');
         const removeBtn = document.createElement('button');
         const checkBox = document.createElement('input');
+        const liText = document.createTextNode(`${taskName}`);
+        const removeBtnText = document.createTextNode(` X `);
         checkBox.setAttribute('type', 'checkbox');
+
         console.dir(checkBox);
 
         removeBtn.addEventListener('click', (e) => {
             li.remove();
         })
 
+        checkBox.addEventListener('change', ({ target: {checked}}) => {
+            if (checked) {
+                li.style.textDecoration = 'line-through';
+            }
+            else {
+                li.style.textDecoration = 'none';
+            }
+            
+        })
  
 
-        const liText = document.createTextNode(`${taskName}`);
-        const removeBtnText = document.createTextNode(` X `);
+        
 
         
         removeBtn.appendChild(removeBtnText);
