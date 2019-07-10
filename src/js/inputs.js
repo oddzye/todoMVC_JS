@@ -21,7 +21,6 @@
         const removeBtnText = document.createTextNode(` X `);
         checkBox.setAttribute('type', 'checkbox');
 
-        console.dir(checkBox);
 
         removeBtn.addEventListener('click', (e) => {
             li.remove();
@@ -52,7 +51,6 @@
         ul.appendChild(li);
 
         tasks.push(taskName);
-        console.log(tasks);
 
         taskName = '';
         input.value = '';
