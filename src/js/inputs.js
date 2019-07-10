@@ -2,7 +2,6 @@
     const input = document.getElementById('add-item-input');
     const button = document.querySelector('.add-btn');
     const ul = document.querySelector('.todo-list');
-    const removeBtn = document.querySelector('.remove-btn');
 
     let taskName = '';
 
@@ -35,11 +34,7 @@
             }
             
         })
- 
 
-        
-
-        
         removeBtn.appendChild(removeBtnText);
 
         li.appendChild(checkBox);

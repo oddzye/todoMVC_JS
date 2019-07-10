@@ -1,0 +1,17 @@
+input[type='text'] {
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+}
+
+input[type='text']:focus {
+    outline: none;
+    border: 1px solid lightskyblue;
+}
+
+.add-btn {
+    border-radius: 5px;
+    border: 1px solid lightskyblue;
+    color: lightskyblue;
+    background-color: white;
+    padding: 5px 17px;
+}
