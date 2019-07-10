@@ -6,6 +6,26 @@ input[type='text'] {
     min-width: 250px;
 }
 
+input[type='checkbox'] {
+    margin-right: 10px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+
 input[type='text']:focus {
     outline: none;
     border: 1px solid lightskyblue;
@@ -16,6 +36,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .add-btn {
@@ -31,4 +52,10 @@ form {
 
 .add-btn:hover {
     cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
